@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To Do List App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="profile">
+        <div class="avatar">H</div>
+        <div>
+          <div id="username">Hafidz</div>
+          <div class="meta">front-end</div>
+        </div>
+      </div>
+      <div id="time"></div>
+    </div>
+    <div class="To-do">
+      <h1>TO DO LIST</h1>
+    </div>
+
+    <textarea id="taskInput" placeholder="Tulis tugas di sini..."></textarea>
+
+    <div class="controls">
+      <select  class="btn-form" id="priority">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+      <button class="btn-form" id="submitBtn">Submit</button>
+      <button class="btn-form" id="deleteAllBtn">Delete All</button>
+    </div>
+
+    <div class="lists">
+      <div class="box">
+        <h3>To Do</h3>
+        <ul id="todoList"></ul>
+      </div>
+      <div class="box">
+        <h3>Done</h3>
+        <ul id="doneList"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
